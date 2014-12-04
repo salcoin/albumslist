@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Datewished:</b>
+  <%= @album_owned.datewished %>
+</p>
+
+<p>
+  <b>Dateacquired:</b>
+  <%= @album_owned.dateacquired %>
+</p>
+
+
+<%= link_to 'Edit', edit_album_owned_path(@album_owned) %> |
+<%= link_to 'Back', album_owneds_path %>

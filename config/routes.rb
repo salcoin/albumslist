@@ -1,4 +1,13 @@
 Albumslist::Application.routes.draw do
+  resources :album_owneds
+
+
+  resources :artists
+
+
+  resources :albums
+
+
   authenticated :user do
     root :to => 'home#index'
   end

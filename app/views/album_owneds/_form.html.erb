@@ -1,0 +1,12 @@
+<%= simple_form_for(@album_owned) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :datewished %>
+    <%= f.input :dateacquired %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
